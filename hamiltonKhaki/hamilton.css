@@ -1,3 +1,26 @@
 body {
     margin: 0px;
 }
+
+/*
+transform-origin 을 이용해 회전의 중심점을 잡아준다.
+960/540(50%50%) 이 아닌 944, 512 로 중심점이 나온 이유는 아무래도
+50% 수치 값이 문서 자체의 완벽한 정중앙이 아니기 때문이라고 생각한다.
+그렇기에 값을 임의로 돌려보면서, 겨우 중심점을 찾을 수 있었다.
+*/
+
+
+#hourHand {
+    transform-origin: 944px 512px;
+    animation: hourHand 43200s linear infinite;
+}
+
+#minuteHand {
+    transform-origin: 944px 512px ;
+    animation: minuteHand 3600s linear infinite;
+}
+
+#secondHand {
+    transform-origin: 944px 512px;
+    animation: secondHand 60s linear infinite;
+}
