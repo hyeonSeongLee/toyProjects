@@ -12,15 +12,17 @@ transform-origin 을 이용해 회전의 중심점을 잡아준다.
 
 #hourHand {
     transform-origin: 944px 512px;
-    animation: hourHand 43200s linear infinite;
+    animation: hourHand 43200s linear infinite ;
 }
 
 #minuteHand {
     transform-origin: 944px 512px ;
-    animation: minuteHand 3600s linear infinite;
+    animation: minuteHand 3600s linear infinite ;
 }
 
 #secondHand {
     transform-origin: 944px 512px;
-    animation: secondHand 60s linear infinite;
+    animation: secondHand 60s steps(480) infinite  ;
 }
+
+/* animation 프로퍼티의 벨류 중 linear 과 steps 는 같이 양립할 수 없는 밸류. 일정한 속도로 진행과 끊어지면서 진행이니까.. */
