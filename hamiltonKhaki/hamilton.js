@@ -75,3 +75,12 @@ else {
 }
 
 //전체 일괄 그림자 넣기 (배열 및 반복문 사용)
+
+var pathList = document.querySelectorAll('path')
+var i = 0
+while (i<pathList.length) {
+    pathList[i].style.setProperty("-webkit-filter", "drop-shadow(0px 0px 2.5px #999999)")
+    i=i+1
+}
+
+//자바 스크립트 문법에서 어긋나 복잡한 요소를 추가해야할 때는, .setProperty() 이용 
