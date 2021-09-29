@@ -73,3 +73,5 @@ if (nightModeHour>19 || nightModeHour<7){
 else {
 
 }
+
+//전체 일괄 그림자 넣기 (배열 및 반복문 사용)
