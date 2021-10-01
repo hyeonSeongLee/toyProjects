@@ -79,8 +79,14 @@ document.querySelector('#clockAnimate').innerHTML = animation
 var pathList = document.querySelectorAll('path')
 var i = 0
 while (i<pathList.length) {
-    pathList[i].style.setProperty("-webkit-filter", "drop-shadow(0px 0px 2.5px #999999)")
+    pathList[i].style.setProperty("-webkit-filter", "drop-shadow(0px 0px 2.5px #000000)")
     i=i+1
 }
 
+var rectList = document.querySelectorAll('rect')
+var i = 0
+while (i<rectList.length) {
+    rectList[i].style.setProperty("-webkit-filter", "drop-shadow(0px 0px 2.5px #000000)")
+    i=i+1
+}
 //자바 스크립트 문법에서 어긋나 복잡한 요소를 추가해야할 때는, .setProperty() 이용 
