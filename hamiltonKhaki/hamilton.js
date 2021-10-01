@@ -29,50 +29,50 @@ document.querySelector('#clockAnimate').innerHTML = animation
 //현재 시간에 따른 나이트 모드 
 //시간의 경우 객체 생성 및 객체 메소드를 통하여 구현
 
-var nightModeTime = new Date()
-nightModeHour = nightModeTime.getHours()
+// var nightModeTime = new Date()
+// nightModeHour = nightModeTime.getHours()
 
-if (nightModeHour>19 || nightModeHour<7){
+// if (nightModeHour>19 || nightModeHour<7){
 
-    var pathList = document.querySelectorAll('path')
-    var i = 0
-    while (i < pathList.length) {
-        pathList[i].style.fill='black'
-        pathList[i].style.stroke='white'
-        i = i+1
-    }
+//     var pathList = document.querySelectorAll('path')
+//     var i = 0
+//     while (i < pathList.length) {
+//         pathList[i].style.fill='black'
+//         pathList[i].style.stroke='white'
+//         i = i+1
+//     }
     
-    var lineList = document.querySelectorAll('line')
-    var i = 0
-    while (i < lineList.length) {
-        lineList[i].style.fill='black'
-        lineList[i].style.stroke='white'
-        i = i+1
-    }
+//     var lineList = document.querySelectorAll('line')
+//     var i = 0
+//     while (i < lineList.length) {
+//         lineList[i].style.fill='black'
+//         lineList[i].style.stroke='white'
+//         i = i+1
+//     }
     
-    var rectList = document.querySelectorAll('rect')
-    var i = 0
-    while (i < rectList.length) {
-        rectList[i].style.fill='black'
-        rectList[i].style.stroke='white'
-        i = i+1
-    }
+//     var rectList = document.querySelectorAll('rect')
+//     var i = 0
+//     while (i < rectList.length) {
+//         rectList[i].style.fill='black'
+//         rectList[i].style.stroke='white'
+//         i = i+1
+//     }
     
-    document.querySelector('circle').style.fill='black'
-    document.querySelector('circle').style.stroke='white'
-    document.querySelector('body').style.backgroundColor='black'
+//     document.querySelector('circle').style.fill='black'
+//     document.querySelector('circle').style.stroke='white'
+//     document.querySelector('body').style.backgroundColor='black'
     
-    var nightList = document.getElementsByClassName('nightGlow')
-    var i = 0
-    while (i<nightList.length) {
-        nightList[i].style.fill='#BFFF00'
-        i=i+1
-    }
+//     var nightList = document.getElementsByClassName('nightGlow')
+//     var i = 0
+//     while (i<nightList.length) {
+//         nightList[i].style.fill='#BFFF00'
+//         i=i+1
+//     }
 
-}
-else {
+// }
+// else {
 
-}
+// }
 
 //전체 일괄 그림자 넣기 (배열 및 반복문 사용)
 
